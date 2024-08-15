@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav main main"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr 50px;
+            gap: 20px;
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: #4682b4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #87ceeb;
+            padding: 20px;
+        }
+        main {
+            grid-area: main;
+            background-color: #e0ffff;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #4682b4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+    <title>Layout de Portfólio</title>
+</head>
+<body>
+
+<div class="container">
+    <header>Cabeçalho</header>
+    <nav>Navegação</nav>
+    <main>Conteúdo Principal</main>
+    <footer>Rodapé</footer>
+</div>
+
+</body>
+</html>
